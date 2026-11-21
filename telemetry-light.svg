@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="1200" height="390" role="img" aria-labelledby="t-title t-desc">
+  <title id="t-title">RankLab Inversion &amp; AgentMemoryLab Token Capsule</title>
+  <desc id="t-desc">Minimalist Bento comparison of MovieLens 1M rank inversion and 4-layer o200k_base token serialization overhead.</desc>
+  <defs>
+    <style>
+      @media (prefers-reduced-motion: no-preference) {
+        .flow-pulse {
+          stroke-dasharray: 18 82;
+          stroke-dashoffset: 100;
+          animation: flow 3.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+        }
+        @keyframes flow { to { stroke-dashoffset: 0; } }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="390" rx="28" fill="#f5f5f7"/>
+
+  <!-- Left Bento Card -->
+  <rect x="20" y="20" width="568" height="350" rx="24" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+  <text x="46" y="54" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#0071e3">RankLab · MovieLens 1M</text>
+  <text x="46" y="78" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3" fill="#1d1d1f">同一个排序模型，<tspan fill="#6e6e73">换一套候选池就反转。</tspan></text>
+  <text x="206" y="102" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" font-weight="600" fill="#86868b">全量候选 (3,669)</text>
+  <text x="368" y="102" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" font-weight="600" fill="#86868b">抽样候选 (Sampled-100)</text>
+  
+    <path d="M 218 122 C 274 122, 300 122, 356 122" fill="none" stroke="#86868b" stroke-width="1.3" opacity="0.42"/>
+    
+    <circle cx="218" cy="122" r="3" fill="#86868b" opacity="0.42"/>
+    <circle cx="356" cy="122" r="3" fill="#86868b" opacity="0.42"/>
+    <text x="206" y="126" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#1 BPR + Logistic · 0.2911</text>
+    <text x="368" y="126" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#1 BPR + Logistic · 0.7761 ·</text>
+    <path d="M 218 156 C 274 156, 300 292, 356 292" fill="none" stroke="#d70040" stroke-width="2.8" opacity="1"/>
+    <path class="flow-pulse" d="M 218 156 C 274 156, 300 292, 356 292" fill="none" stroke="#1d1d1f" stroke-width="2.2" stroke-linecap="round" opacity="0.55" pathLength="100"/>
+    <circle cx="218" cy="156" r="4.2" fill="#d70040" opacity="1"/>
+    <circle cx="356" cy="292" r="4.2" fill="#d70040" opacity="1"/>
+    <text x="206" y="160" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#1d1d1f">#2 BPR + HistGBDT · 0.2882</text>
+    <text x="368" y="296" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#d70040">#6 BPR + HistGBDT · 0.7241 ↓4</text>
+    <path d="M 218 190 C 274 190, 300 190, 356 190" fill="none" stroke="#86868b" stroke-width="1.3" opacity="0.42"/>
+    
+    <circle cx="218" cy="190" r="3" fill="#86868b" opacity="0.42"/>
+    <circle cx="356" cy="190" r="3" fill="#86868b" opacity="0.42"/>
+    <text x="206" y="194" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#3 ItemCF · 0.2800</text>
+    <text x="368" y="194" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#3 ItemCF · 0.7446 ·</text>
+    <path d="M 218 224 C 274 224, 300 258, 356 258" fill="none" stroke="#86868b" stroke-width="1.3" opacity="0.42"/>
+    
+    <circle cx="218" cy="224" r="3" fill="#86868b" opacity="0.42"/>
+    <circle cx="356" cy="258" r="3" fill="#86868b" opacity="0.42"/>
+    <text x="206" y="228" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#4 ItemCF + Logistic · 0.2774</text>
+    <text x="368" y="262" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#5 ItemCF + Logistic · 0.7343 ↓1</text>
+    <path d="M 218 258 C 274 258, 300 156, 356 156" fill="none" stroke="#0071e3" stroke-width="2.8" opacity="1"/>
+    <path class="flow-pulse" d="M 218 258 C 274 258, 300 156, 356 156" fill="none" stroke="#1d1d1f" stroke-width="2.2" stroke-linecap="round" opacity="0.55" pathLength="100"/>
+    <circle cx="218" cy="258" r="4.2" fill="#0071e3" opacity="1"/>
+    <circle cx="356" cy="156" r="4.2" fill="#0071e3" opacity="1"/>
+    <text x="206" y="262" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#1d1d1f">#5 BPR-MF · 0.2670</text>
+    <text x="368" y="160" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#0071e3">#2 BPR-MF · 0.7660 ↑3</text>
+    <path d="M 218 292 C 274 292, 300 224, 356 224" fill="none" stroke="#86868b" stroke-width="1.3" opacity="0.42"/>
+    
+    <circle cx="218" cy="292" r="3" fill="#86868b" opacity="0.42"/>
+    <circle cx="356" cy="224" r="3" fill="#86868b" opacity="0.42"/>
+    <text x="206" y="296" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#6 Popularity · 0.2584</text>
+    <text x="368" y="228" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#4 Popularity · 0.7370 ↑2</text>
+    <path d="M 218 326 C 274 326, 300 326, 356 326" fill="none" stroke="#86868b" stroke-width="1.3" opacity="0.42"/>
+    
+    <circle cx="218" cy="326" r="3" fill="#86868b" opacity="0.42"/>
+    <circle cx="356" cy="326" r="3" fill="#86868b" opacity="0.42"/>
+    <text x="206" y="330" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#7 TIGER-Seq2Seq · 0.1989</text>
+    <text x="368" y="330" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="400" fill="#6e6e73">#7 TIGER-Seq2Seq · 0.6920 ·</text>
+  <text x="46" y="348" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11" fill="#6e6e73">BPR + HistGBDT 全候选显著胜出 (+7.96%, p&lt;0.001)，抽样下却跌至第 6。</text>
+
+  <!-- Right Bento Card -->
+  <rect x="608" y="20" width="572" height="350" rx="24" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+  <text x="636" y="54" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" font-weight="600" fill="#1d8348">AgentMemoryLab · o200k_base</text>
+  <text x="636" y="78" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', sans-serif" font-size="18" font-weight="700" letter-spacing="-0.3" fill="#1d1d1f">看不见的序列化开销，<tspan fill="#6e6e73">让真实输入超支 54%。</tspan></text>
+  <g transform="translate(636, 100)" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="10.8" fill="#6e6e73">
+    <circle cx="5" cy="-4" r="4" fill="#0071e3"/><text x="14" y="0">裸证据块</text>
+    <circle cx="88" cy="-4" r="4" fill="#c96a00"/><text x="97" y="0">JSON 转义 (+213~264)</text>
+    <circle cx="242" cy="-4" r="4" fill="#d70040"/><text x="251" y="0">CoN + ChatML (+149)</text>
+  </g>
+  
+    <text x="636" y="128" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="#1d1d1f">Recency Window</text>
+    <text x="1136.0" y="128" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="11" fill="#6e6e73">4.8% 覆盖 · 1146 tok (+46%)</text>
+    <rect x="636" y="136" width="500.0" height="14" rx="7" fill="#f5f5f7"/>
+    <rect x="636.0" y="136" width="306.2" height="14" rx="7" fill="#0071e3"/>
+    <rect x="938.2" y="136" width="87.3" height="14" fill="#c96a00"/>
+    <rect x="1023.5" y="136" width="60.1" height="14" rx="6" fill="#d70040"/>
+    <line x1="948.5" y1="134" x2="948.5" y2="152" stroke="#1d1d1f" stroke-width="1.6"/>
+    <text x="636" y="180" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="#1d1d1f">BM25 Lexical</text>
+    <text x="1136.0" y="180" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="11" fill="#6e6e73">83.9% 覆盖 · 16.7% 陈旧 · 1153 tok (+47%)</text>
+    <rect x="636" y="188" width="500.0" height="14" rx="7" fill="#f5f5f7"/>
+    <rect x="636.0" y="188" width="305.7" height="14" rx="7" fill="#0071e3"/>
+    <rect x="937.7" y="188" width="90.7" height="14" fill="#c96a00"/>
+    <rect x="1026.4" y="188" width="60.1" height="14" rx="6" fill="#d70040"/>
+    <line x1="948.5" y1="186" x2="948.5" y2="204" stroke="#1d1d1f" stroke-width="1.6"/>
+    <text x="636" y="232" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="#1d1d1f">Subword LSA</text>
+    <text x="1136.0" y="232" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="11" fill="#6e6e73">85.5% 覆盖 · 8.3% 陈旧 · 1153 tok (+47%)</text>
+    <rect x="636" y="240" width="500.0" height="14" rx="7" fill="#f5f5f7"/>
+    <rect x="636.0" y="240" width="305.6" height="14" rx="7" fill="#0071e3"/>
+    <rect x="937.6" y="240" width="90.8" height="14" fill="#c96a00"/>
+    <rect x="1026.4" y="240" width="60.1" height="14" rx="6" fill="#d70040"/>
+    <line x1="948.5" y1="238" x2="948.5" y2="256" stroke="#1d1d1f" stroke-width="1.6"/>
+    <text x="636" y="284" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12" font-weight="600" fill="#1d1d1f">ChronoHybrid Anchor</text>
+    <text x="1136.0" y="284" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="11" fill="#6e6e73">87.1% 覆盖 · 0.0% 陈旧 · 1181 tok (+54%)</text>
+    <rect x="636" y="292" width="500.0" height="14" rx="7" fill="#f5f5f7"/>
+    <rect x="636.0" y="292" width="299.9" height="14" rx="7" fill="#0071e3"/>
+    <rect x="931.9" y="292" width="107.2" height="14" fill="#c96a00"/>
+    <rect x="1037.1" y="292" width="60.1" height="14" rx="6" fill="#d70040"/>
+    <line x1="948.5" y1="290" x2="948.5" y2="308" stroke="#1d1d1f" stroke-width="1.6"/>
+  <text x="948.5" y="348" text-anchor="middle" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="10.5" font-weight="600" fill="#1d1d1f">▲ 800-Token 名义上限</text>
+</svg>

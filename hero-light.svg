@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 350" width="1200" height="350" role="img" aria-labelledby="h-title h-desc">
+  <title id="h-title">Zhongyuan Zou — Software Engineering</title>
+  <desc id="h-desc">Offline recommender evaluation, agentic memory budgets, and deterministic workflow state machines.</desc>
+  <defs>
+    <radialGradient id="orb1" cx="25%" cy="15%" r="55%">
+      <stop offset="0%" stop-color="#0071e3" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#f5f5f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb2" cx="82%" cy="20%" r="48%">
+      <stop offset="0%" stop-color="#5856d6" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#f5f5f7" stop-opacity="0"/>
+    </radialGradient>
+    <style>
+      @media (prefers-reduced-motion: no-preference) {
+        .orb { animation: breathe 9s ease-in-out infinite alternate; transform-origin: center; }
+        .tile-inner { animation: rise 0.75s cubic-bezier(0.16, 1, 0.3, 1) both; }
+        @keyframes breathe {
+          from { opacity: 0.78; }
+          to { opacity: 1; }
+        }
+        @keyframes rise {
+          from { opacity: 0; transform: translateY(8px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="350" rx="28" fill="#f5f5f7"/>
+  <rect class="orb" width="1200" height="350" rx="28" fill="url(#orb1)"/>
+  <rect class="orb" width="1200" height="350" rx="28" fill="url(#orb2)"/>
+  <rect x="0.5" y="0.5" width="1199" height="349" rx="27.5" fill="none" stroke="#e5e5ea" stroke-width="1"/>
+
+  <g transform="translate(52, 54)">
+    <text x="0" y="0" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="12.5" font-weight="600" letter-spacing="0.4" fill="#0071e3">Xiamen University Malaysia · Software Engineering</text>
+    <text x="-2" y="56" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="52" font-weight="700" letter-spacing="-1.8" fill="#1d1d1f">Zhongyuan Zou.</text>
+    <text x="0" y="96" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'PingFang SC', sans-serif" font-size="20" font-weight="600" letter-spacing="-0.3" fill="#1d1d1f">用严密的离线协议与确定性状态机，<tspan fill="#6e6e73">丈量推荐排序与智能体系统的真实边界。</tspan></text>
+  </g>
+
+  
+  <g transform="translate(48, 206)">
+    <rect width="264" height="104" rx="20" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+    <text x="24" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="28" font-weight="700" letter-spacing="-0.8" fill="#1d1d1f">0.0 bit</text>
+    <text x="24" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1d1d1f">Temporal Leakage</text>
+    <text x="24" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" fill="#6e6e73">MovieLens 1M · 10,402 lists</text>
+  </g>
+  <g transform="translate(328, 206)">
+    <rect width="264" height="104" rx="20" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+    <text x="24" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="28" font-weight="700" letter-spacing="-0.8" fill="#1d1d1f">5.02M</text>
+    <text x="24" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1d1d1f">Prefix-Trie Beams</text>
+    <text x="24" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" fill="#6e6e73">0 invalid item hallucinations</text>
+  </g>
+  <g transform="translate(608, 206)">
+    <rect width="264" height="104" rx="20" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+    <text x="24" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="28" font-weight="700" letter-spacing="-0.8" fill="#1d1d1f">+53.8%</text>
+    <text x="24" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1d1d1f">ChatML Token Tax</text>
+    <text x="24" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" fill="#6e6e73">o200k_base 4-layer audit</text>
+  </g>
+  <g transform="translate(888, 206)">
+    <rect width="264" height="104" rx="20" fill="#ffffff" stroke="#e5e5ea" stroke-width="1"/>
+    <text x="24" y="42" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif" font-size="28" font-weight="700" letter-spacing="-0.8" fill="#1d1d1f">71 / 71</text>
+    <text x="24" y="66" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang SC', sans-serif" font-size="13" font-weight="600" fill="#1d1d1f">Invariant Unit Tests</text>
+    <text x="24" y="85" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="11.5" fill="#6e6e73">5 suites · 8+11+16+20+16</text>
+  </g>
+</svg>
